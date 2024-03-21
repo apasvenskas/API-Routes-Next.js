@@ -1,15 +1,25 @@
-import { Fragment } from 'react';
+import { Fragment } from "react";
 // import { getFeaturedPosts } from '../lib/posts-util';
 
 function HomePage(props) {
   return (
-    <Fragment>
+    // <Fragment>
+    <>
+      <div>
         <title>Audrius Blog</title>
-        <meta
-          name='description'
-          content='I post about programming and web development.'
-        />
-    </Fragment>
+        <label htmlFor="email">Your Email Adress</label>
+        <input type="email" id="email" />
+      </div>
+      <div>
+        <label htmlFor="feedback">Your Feedback</label>
+        <textarea type="text" id="feedback" rows='5'></textarea>
+      </div>
+    </>
+    // <meta
+    //   name='description'
+    //   content='I post about programming and web development.'
+    // />
+    // </Fragment>
   );
 }
 
