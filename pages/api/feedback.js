@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 function handler(req, res){
-    if(req.methode === 'POST'){
+    if(req.method === 'POST'){
         const email = req.body.email; 
         const feedbackText = req.body.text; 
 
