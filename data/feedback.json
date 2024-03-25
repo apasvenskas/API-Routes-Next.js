@@ -1,1 +1,1 @@
-[{"email":"email@email.com","text":"this is a test 1"}]
+[{"email":"email@email.com","text":"this is a test 1"},{"email":"","text":""},{"email":"foo@bar.baz","text":"this another test"},{"email":"foo@bar.baz","text":"this another test"}]
