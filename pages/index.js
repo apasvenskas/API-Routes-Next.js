@@ -20,7 +20,7 @@ export function getStaticProps(){
     props: {
       posts: featuredPosts
     }, 
-    revalidate: 3600
+    // revalidate: 3600
   }
 }
 

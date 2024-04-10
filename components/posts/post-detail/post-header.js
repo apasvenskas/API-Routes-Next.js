@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 import classes from './post-header.module.css';
 
 function PostHeader(props) {

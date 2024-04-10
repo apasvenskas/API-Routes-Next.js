@@ -13,7 +13,7 @@ function PostItem(props) {
   });
 
   const imagePath = `/images/posts/${slug}/${image}`;
-  const linkPath = `/posts/${slug}`;
+  const linkPath = `/s/${slug}`;
 
   return (
     <li className={classes.post}>
@@ -25,7 +25,10 @@ function PostItem(props) {
               alt={title}
               width={300}
               height={200}
-              layout='responsive'
+              loading='lazy'
+              // onError={(e) => {
+              //   e.target.src = '/images/posts/getting-started-with-nextjs.png';
+              // }}
             />
           </div>
           <div className={classes.content}>
