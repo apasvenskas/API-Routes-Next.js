@@ -15,8 +15,8 @@ function Hero() {
       </div>
       <h1>Hello My Name Is Audrius</h1>
       <p>
-        I blog about Full Stack Developemnt - especially frontend frameworks like
-        Angular, React, Next.
+        I blog about Full Stack Development - especially about frameworks such as React.js, Node.js, and Next.js. 
+        I also like to dive deeper in to AWS cloud and Data Structures. 
       </p>
     </section>
   );
