@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import classes from './contact-form.module.css';
 import Notification from '../ui/notification';
 
