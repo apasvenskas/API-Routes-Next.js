@@ -1,4 +1,4 @@
-import MongoClient from "mongodb/lib/mongo_client";
+import { MongoClient } from "mongodb";
 
 async function handler(req, res) {
   if (req.method === "POST") {
@@ -27,7 +27,7 @@ async function handler(req, res) {
     let client;
     try {
         client = await MongoClient.connect(
-            'mongodb+srv://audrius13toto:rlnEg1dxd7lF4wTy@cluster2.w6j0ohc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2'
+            'mongodb+srv://audrius13toto:RJxYjbompAOnYiO5@cluster2.w6j0ohc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2'
         );
     } catch(error){
         res.status(500).json({message: error.message})
@@ -37,7 +37,7 @@ async function handler(req, res) {
     const db = client.db();
 
     try{
-        const result = db.collection('message').insertOne();
+        const result = await db.collection('message').insertOne(newMessage);
         newMessage.id = result.insertedId
     } catch (error){
         client.close()
