@@ -20,10 +20,6 @@ async function handler(req, res) {
         name,
         message
     };
-
-    // use mongo client to connect to the data base
-    // password: rlnEg1dxd7lF4wTy
-    // another connection string mongodb+srv://audrius13toto:<password>@cluster2.w6j0ohc.mongodb.net/
     let client;
     try {
         client = await MongoClient.connect(

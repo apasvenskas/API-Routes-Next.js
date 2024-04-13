@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
-
 import PostContent from '../../components/posts/post-detail/post-content';
 import { getPostData, getPostsFiles } from '../../lib/posts-util';
 
