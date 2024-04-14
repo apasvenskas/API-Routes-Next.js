@@ -20,10 +20,15 @@ async function handler(req, res) {
         name,
         message
     };
+
     let client;
+    // for the final deployment
+    const connectionString = `mongodb+srv://${process.env.mongodb_username}:${process.env.password}@${process.env.mongodb_clustername}.w6j0ohc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2`;
+
     try {
         client = await MongoClient.connect(
-            'mongodb+srv://audrius13toto:RJxYjbompAOnYiO5@cluster2.w6j0ohc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2'
+            // 'mongodb+srv://audrius13toto:RJxYjbompAOnYiO5@cluster2.w6j0ohc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster2'
+            connectionString
         );
     } catch(error){
         res.status(500).json({message: error.message})
